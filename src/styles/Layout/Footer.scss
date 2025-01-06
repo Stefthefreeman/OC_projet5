@@ -1,0 +1,49 @@
+// Utilisation nesting de selecteur hiéararchique
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: $align-center;
+  background-color: $footer-background;
+  padding: $no-padding;
+  height: 209px;
+  margin: {
+    bottom: 0;
+    top: 4%;
+  }
+
+
+  .logo_footer {
+    width: 122px;
+    height: 39.44px;
+    padding-bottom: 15px;
+    margin: 20px;
+  }
+
+
+  .footer_text {
+    text-align: center;
+    margin: $no-margin;
+    color: $text-white;
+    font: {
+      family: $font-family-primary;
+      weight: $font-weight-primary;
+      size: $font-size-2;
+    }
+  }
+
+
+  // Version mobile
+  @media screen and (max-width: 768px) {
+    margin-top: 8%;
+    .logo_footer {
+      padding-bottom: 0px;
+    }
+
+    .footer_text {
+      font-size: 12px;
+      width: 133px;
+    }
+  }
+}

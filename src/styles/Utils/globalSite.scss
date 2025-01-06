@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+}
+
+// Main de la page à propos
+.about-main {
+    padding: {
+        left: 15%;
+        right: 15%;
+    }
+    @media screen and (max-width: 768px) {
+        min-height: 260px;
+        padding: {
+            left: 5%;
+            right: 5%;
+        }
+    }
+}

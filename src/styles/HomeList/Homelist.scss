@@ -1,0 +1,21 @@
+// Utilisation Nesting
+.gallery {
+    @include flex-wrap;
+    justify-content: center;
+    background: #f6f6f6;
+    border-radius: 25px;
+    margin: {
+      right: 7%;
+      left: 7%;
+    }
+
+    // Version mobile
+    @media screen and (max-width: 768px) {
+      @include flex-column;
+      background: transparent;
+      margin: {
+        right: 10%;
+        left: 1%;
+      }
+    }
+  }

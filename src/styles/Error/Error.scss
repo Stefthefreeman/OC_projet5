@@ -1,0 +1,74 @@
+// Utilisation nesting de selecteur hiérarchique 
+// Utilisation des variables
+// Utilisation mixin pour alignement centre
+
+
+  .error_content { // conteneur de l'erreur
+    @include flex-column;
+    gap : 40px;
+    margin:7%;
+  
+    
+    .error_number { // 404
+      @include flex-center;
+      margin: $no-margin;
+      color: $text-theme-color;
+      font: {
+        family: $font-family-primary;
+        weight: $font-weight-secondary;
+        size: 288px;
+      }
+    }
+  
+    
+    .error_text { // texte d'erreur
+      @include flex-center;
+      margin-bottom: 6%;
+      color: $text-theme-color;
+      font: {
+        family: $font-family-primary;
+        weight: $font-weight-primary;
+        size: $font-size-1;
+      } 
+    }
+  
+    
+    .error_link_home { // lien vers la page d'accueil
+      @include flex-center;
+      color: $text-black;
+      font: {
+        family: $font-family-primary;
+        weight: $font-weight-primary;
+        size: $font-size-3;
+      }
+      
+  
+      &:hover {
+        text-decoration: underline;
+        color: $text-theme-color;
+      }
+    }
+
+
+
+    // Version mobile
+    @media screen and (max-width: 768px) {
+      min-height: 425px;
+      .error_number {
+        margin-top: 20px;
+        font: {
+          weight: $font-weight-secondary;
+          size: 96px;
+        }      
+      }
+      .error_text {
+        width: 260px;
+        font-size: $font-size-3;
+      }
+      .error_link_home {
+        font-size: $font-size-4;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  

@@ -1,0 +1,57 @@
+// Utilisation de Nesting et selecteur parent pour eviter une saisie supplémentaire
+// @include WH-full = Width et Height 100%
+// @include card-dimensions = width et height 340px
+
+.card { // Composant carte
+    display: flex; flex-direction: column; justify-content: flex-end;
+    @include card-dimensions; 
+    margin: 30px;
+    animation: fadeInUp 100ms ease-in-out; // Animation d'apparition
+    overflow: hidden; // Empêche le redimensionnement
+    border-radius: $border-medium;
+    box-shadow: $dark-shadow;
+  
+    a { // lien vers la page du logement
+      @include card-dimensions;
+    }
+  
+    &_img { // Image de la carte
+      @include WH-full;
+      border-radius: $border-medium;
+      object-fit: cover;
+      transition: transform 100ms; // Transition de l'image
+    }
+  
+    &:hover &_img { // Agrandissement de l'image à 10% au survol
+      transform: scale(1.1); 
+    }
+  
+    &_title { // Titre de la carte
+      display: flex; justify-content: flex-start;
+      position: absolute;
+      max-width: 300px;
+      height: 50px;
+      color: $text-white;
+      text-align: left;
+      font: {
+        family: $font-family-primary;
+        weight: $font-weight-secondary;
+        size: $font-size-3;
+      }
+      margin: $no-margin;
+      padding: {
+        left: 10px;
+        right: 10px;
+      }
+    }
+
+    // Version mobile
+    @media screen and (max-width: 768px) {
+      @include card-mobile-dimensions;
+      margin: {
+      right: 5%; 
+      left: 5%;
+      bottom: 0px;
+      }
+    }
+}

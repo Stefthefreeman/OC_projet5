@@ -1,0 +1,44 @@
+.host { //selector parent
+    display: flex; flex-direction: row;
+    gap: 10px;
+    margin: $no-margin;
+    width: 167px;
+    height: 64px;
+  
+    &-name { // Utilisation de & pour sélecteur parent
+      color: $text-theme-color;
+      font-family: $font-family-primary;
+      font-weight: $font-weight-primary;
+      font-size: $font-size-3;
+      display: flex;
+      align-items: $align-center;
+      text-align: right;
+      width: 93px;
+      margin: $no-margin;
+    }
+  
+    &-picture {
+      display: flex;
+      width: 64px; height: 64px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+
+    // Version mobile
+    @media screen and (max-width: 768px) {
+      width: 135px;
+      height: 32px;
+      justify-content: flex-end;
+
+      &-name {
+        font-size: 12px;
+        width: 70px;
+      }
+
+      &-picture {
+        width: 32px; height: 32px;
+      }
+    }
+  }
+

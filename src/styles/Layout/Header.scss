@@ -1,0 +1,58 @@
+// Utilisation mixins pour les liens de navigation et alignement espacé
+// Utilisation de nesting pour selecteur hiérarchique
+
+.header {
+  @include flex-space;
+  max-height: 68px;
+  margin: {
+    left: 7%;
+    right: 7%;
+    top: 2%;
+    bottom: 3%;
+  }
+  
+
+  // Logo du header
+  .logo_header {
+    width: 210px;
+    height: auto;
+  }
+
+
+  // Barre de navigation
+  .nav-bar {
+    @include flex-wrap;
+    justify-content: center;
+    gap: 57px;
+
+    // Liens de navigation
+    .nav_home,
+    .nav_about { 
+      @include nav-link;
+    }
+  }
+
+
+  // Version mobile
+  @media screen and (max-width: 768px) {
+    margin: {
+    top: 4%;
+    right: 5%; 
+    left: 5%;
+    }
+
+  .logo_header {
+    width: 145px;
+    height: auto;
+  }
+
+  .nav-bar {
+    row-gap: 4px;
+    column-gap: 26px;
+    .nav_home,
+    .nav_about { 
+      font-size: 12px;
+    }
+  }
+ }
+}

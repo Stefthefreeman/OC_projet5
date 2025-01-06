@@ -1,0 +1,18 @@
+// Fichier pour regrouper toutes les variables, mixins, et autres configurations globales
+@import "./settings";
+
+// components
+@import "./Banner/Banner";
+@import './Card/Card';
+@import "./Collapse/Collapse";
+@import "./Error/Error";
+@import "./Layout/Footer";
+@import "./HomeList/Homelist";
+@import "./Layout/Header";
+
+// components logementDetails
+@import "./LogementDetails/Diaporama";
+@import "./LogementDetails/HostPerson";
+@import "./LogementDetails/Rating";
+@import "./LogementDetails/Tags";
+@import "./LogementDetails/LogementsDetails";

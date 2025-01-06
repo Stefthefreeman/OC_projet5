@@ -1,0 +1,44 @@
+// Conteneur de tags
+.tag-container {
+  @include flex-row; 
+  @include flex-wrap;
+  justify-content: flex-start; align-items: $align-center;
+  row-gap: 5px;
+  column-gap: 15px;
+  margin-top: 15px;
+
+  @media screen and (max-width: 768px) {
+    margin-top: 10px;
+  }
+}
+
+
+
+// Utilisation Nesting des propriétés
+.tag {
+  display: flex; justify-content: center;
+  align-items: $align-center;
+  border-radius: $border-medium;
+  width: fit-content;
+  height: 25px;
+  line-height: 19.96px;
+  background: $primary-background;
+  color: $text-white;
+
+  font: { //style de police
+    family: $font-family-primary;
+    weight: $font-weight-secondary;
+    size: $font-size-4;
+  }
+  padding: { //remplissage
+    left: 15px; 
+    right: 15px;
+  }
+
+  @media screen and (max-width: 768px) {
+    height: 18px;
+    border-radius: $border-small;
+    font-size: 10px;
+    Line-height: 14.26px;
+  }
+}
