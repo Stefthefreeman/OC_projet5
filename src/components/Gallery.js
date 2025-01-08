@@ -1,15 +1,15 @@
 import React from 'react';
 import Logements from '../datas/logements.json';
-import Card from './Card';
+import CardHome from './Card-Home';
 
 function Gallery() {
     return (
       <div className="gallery">
         {Logements.map((logement) => (
-          <Card key={logement.id}
-            id={logement.id}
-            image={logement.cover}
-            title={logement.title}
+          <CardHome key={logement.id}
+                    id={logement.id}
+                    image={logement.cover}
+                    title={logement.title}
           />
         ))}       
       </div>

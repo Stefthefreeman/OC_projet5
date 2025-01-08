@@ -1,8 +1,8 @@
 import React from "react";
-import ErrorContent from "../components/Error"; 
+import ErrorContent from "../components/Page404";
 
 
-function Error() {
+function PageError() {
     return (
         <div>
             <ErrorContent />
@@ -10,4 +10,4 @@ function Error() {
     );
 }
 
-export default Error;
+export default PageError;

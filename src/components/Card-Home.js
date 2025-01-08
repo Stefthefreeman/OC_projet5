@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "react-router-dom"; 
 
-function Card({image, title, id}) {
+function CardHome({image, title, id}) {
     return (
         <Link className="card" to={`/logement/${id}`}>          {/* link vers logement où ${id} est remplacé par l'ID réel du logement */}
         <img className="card_img" src={image} alt={title} />
@@ -10,7 +10,7 @@ function Card({image, title, id}) {
     );
 }
 
-export default Card;
+export default CardHome;
 
 
 

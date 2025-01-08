@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"; //Composant pour les liens de navigation
 
-const ErrorContent = () => {
+const Error404 = () => {
     return (
         <>
         <div className="error_content">
@@ -12,7 +12,7 @@ const ErrorContent = () => {
     );
 };
 
-export default ErrorContent;
+export default Error404;
 
 
 
