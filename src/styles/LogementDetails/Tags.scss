@@ -2,7 +2,8 @@
 .tag-container {
   @include flex-row; 
   @include flex-wrap;
-  justify-content: flex-start; align-items: $align-center;
+  justify-content: flex-start;
+  align-items: $align-center;
   row-gap: 5px;
   column-gap: 15px;
   margin-top: 15px;
@@ -12,9 +13,6 @@
   }
 }
 
-
-
-// Utilisation Nesting des propriétés
 .tag {
   display: flex; justify-content: center;
   align-items: $align-center;
@@ -25,12 +23,12 @@
   background: $primary-background;
   color: $text-white;
 
-  font: { //style de police
+  font: {
     family: $font-family-primary;
     weight: $font-weight-secondary;
     size: $font-size-4;
   }
-  padding: { //remplissage
+  padding: {
     left: 15px; 
     right: 15px;
   }

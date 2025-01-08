@@ -40,20 +40,20 @@
     flex-direction: column;
   }
 
-// Mixin pour flexation ligne  
+// Mixin pour flex ligne  
   @mixin flex-row {
     display: flex;
     flex-direction: row;
   }
 
-// Mixin pour flexation espace  
+// Mixin pour flex espace  
   @mixin flex-space {
     display: flex;
     justify-content: space-between;
     align-items: $align-center;
   }
 
-// Mixin pour flexation wrap
+// Mixin pour flex wrap
   @mixin flex-wrap {
     display: flex;
     flex-wrap: wrap;

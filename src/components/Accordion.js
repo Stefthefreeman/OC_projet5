@@ -3,7 +3,7 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
-function Collapse({ title, content }) {
+function Accordion({ title, content }) {
     const [isOpen, setIsOpen] = useState(false); //par défaut la collapse est fermée
 
     //fonction pour afficher le contenu de la collapse
@@ -31,7 +31,7 @@ function Collapse({ title, content }) {
     )
 }
 
-export default Collapse; 
+export default Accordion;
 
 
 // Composant Collapse utilise useState pour gérer son état ouvert/fermé

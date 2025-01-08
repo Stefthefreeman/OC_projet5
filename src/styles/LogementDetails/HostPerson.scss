@@ -1,11 +1,11 @@
-.host { //selector parent
+.host {
     display: flex; flex-direction: row;
     gap: 10px;
     margin: $no-margin;
     width: 167px;
     height: 64px;
   
-    &-name { // Utilisation de & pour sélecteur parent
+    &-name {
       color: $text-theme-color;
       font-family: $font-family-primary;
       font-weight: $font-weight-primary;
@@ -25,7 +25,7 @@
     }
 
 
-    // Version mobile
+
     @media screen and (max-width: 768px) {
       width: 135px;
       height: 32px;

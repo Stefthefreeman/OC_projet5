@@ -1,7 +1,7 @@
 import React from "react";
 import Banner from "../components/Banner";
-import Collapse from "../components/Collapse";
-import banner_about from "../assets/banner/banner_about.png";
+import Accordion from "../components/Accordion";
+import banner_about from "../assets/banner/banner_about_us.png";
 import CollapseData from "../datas/about-us.json";
 
 function AboutUs() {
@@ -11,10 +11,10 @@ function AboutUs() {
             <Banner image={banner_about}/>
             <main className="about-main" >
 
-            {CollapseData.map((collapse) => (                       // on liste les données de collapse depuis fichier json 
-                <Collapse key={collapse.id}                         // Key pour que chaque collapse soit unique
-                          title={collapse.title} 
-                          content={collapse.content} />
+            {CollapseData.map((collapse) => (
+                <Accordion key={collapse.id}
+                           title={collapse.title}
+                           content={collapse.content} />
             ))}
             </main>
 

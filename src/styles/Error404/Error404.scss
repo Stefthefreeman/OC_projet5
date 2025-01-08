@@ -14,9 +14,18 @@
         size: 288px;
       }
     }
-  
-    
-    .error_text { // texte d'erreur
+
+  .error_msg {
+    @include flex-center;
+    margin-bottom: 6%;
+    color: $text-theme-color;
+    font: {
+      family: $font-family-primary;
+      weight: $font-weight-primary;
+      size: $font-size-1;
+    }
+  }
+    .back_msg{ // texte d'erreur
       @include flex-center;
       margin-bottom: 6%;
       color: $text-theme-color;
@@ -28,7 +37,7 @@
     }
   
     
-    .error_link_home { // lien vers la page d'accueil
+    .back_home {
       @include flex-center;
       color: $text-black;
       font: {
@@ -56,11 +65,15 @@
           size: 96px;
         }      
       }
-      .error_text {
+      .error_msg {
         width: 260px;
         font-size: $font-size-3;
       }
-      .error_link_home {
+      .back_msg{
+        width: 260px;
+        font-size: $font-size-3;
+      }
+      .back_home {
         font-size: $font-size-4;
         margin-bottom: 20px;
       }

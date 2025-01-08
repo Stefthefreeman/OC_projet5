@@ -1,4 +1,4 @@
-.rating { // Conteneur des étoiles
+.rating {
     @include flex-row;
     width: fit-content;
 
@@ -7,7 +7,7 @@
     }
   }
   
-  // Mixin star-common pour les styles partagés entre les deux types d'étoiles
+
   .star-full {
     color: $text-theme-color;
     @include star-common;

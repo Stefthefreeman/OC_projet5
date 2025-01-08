@@ -1,4 +1,4 @@
-import logo from "../assets/logo/logo_header.png";
+import logo from "../assets/logo/header.png";
 import { NavLink, useLocation } from "react-router-dom"; //useLocation pour accéder au chemin actuel
 
 const Header = () => {

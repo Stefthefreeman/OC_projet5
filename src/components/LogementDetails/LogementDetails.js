@@ -7,7 +7,7 @@ import Tags from "./Tags";
 import Diaporama from "./Diaporama";
 import HostPerson from "./HostPerson";
 import Rating from "./Rating";
-import Collapse from "../Collapse.js";
+import Accordion from "../Accordion.js";
 
 function LogementDetails({id}) {
     
@@ -37,12 +37,12 @@ function LogementDetails({id}) {
 
                     <div className="collapse-logement">
                         <div className="collapse-description">
-                        <Collapse title="Description" content={logement.description} />
+                        <Accordion title="Description" content={logement.description} />
                         </div>
 
                         <div className="collapse-equipements">
-                        <Collapse title="Equipements" 
-                                  content={
+                        <Accordion title="Equipements"
+                                   content={
                                     <ul> {logement.equipments.map((Equipment, index) =>
                                            <li key={index}>{Equipment}</li>
                                          )}
