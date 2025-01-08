@@ -2,15 +2,15 @@ import React from "react";
 import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
 import banner_about from "../assets/banner/banner_about.png";
-import CollapseData from "../datas/collapses.json";
+import CollapseData from "../datas/about-us.json";
 
-function About() {
+function AboutUs() {
     return (
         <div>
 
             <Banner image={banner_about}/>
             <main className="about-main" >
-            {/* Affichage des collapses */}
+
             {CollapseData.map((collapse) => (                       // on liste les données de collapse depuis fichier json 
                 <Collapse key={collapse.id}                         // Key pour que chaque collapse soit unique
                           title={collapse.title} 
@@ -22,7 +22,7 @@ function About() {
     );
 }
 
-export default About;
+export default AboutUs;
 
 
 

@@ -1,15 +1,10 @@
-// Utilisation nesting de selecteur hiérarchique 
-// Utilisation des variables
-// Utilisation mixin pour alignement centre
-
-
-  .error_content { // conteneur de l'erreur
+.error {
     @include flex-column;
     gap : 40px;
     margin:7%;
   
     
-    .error_number { // 404
+    .error_404 {
       @include flex-center;
       margin: $no-margin;
       color: $text-theme-color;
@@ -54,7 +49,7 @@
     // Version mobile
     @media screen and (max-width: 768px) {
       min-height: 425px;
-      .error_number {
+      .error_404 {
         margin-top: 20px;
         font: {
           weight: $font-weight-secondary;

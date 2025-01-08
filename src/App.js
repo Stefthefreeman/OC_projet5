@@ -1,7 +1,7 @@
 import {Routes, Route, HashRouter, Navigate} from "react-router-dom";
 import "./styles/App.scss";
 import Home from "./pages/Home";
-import About from "./pages/about";
+import AboutUs from "./pages/aboutUs";
 import Logement from "./pages/Logement";
 import Error404 from "./pages/ErrorPage";
 import Header from "./components/Header";
@@ -13,7 +13,7 @@ function App() {
           <Routes>
               <Route path="/" element={<Navigate replace to="/accueil" />} />
               <Route path="/accueil" element={<Home />} />
-              <Route path="/about" element={<About />} />
+              <Route path="/about" element={<AboutUs />} />
               <Route path="/logement/:id" element={<Logement/>} />
               <Route path="*" element={<Error404 />} />
           </Routes>
