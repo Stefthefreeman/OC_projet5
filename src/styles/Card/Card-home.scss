@@ -16,7 +16,7 @@
     }
   
     &_img { // Image de la carte
-      @include WH-full;
+      @include full-width;
       border-radius: $border-medium;
       object-fit: cover;
       transition: transform 100ms; // Transition de l'image

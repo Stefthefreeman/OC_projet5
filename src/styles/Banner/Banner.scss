@@ -11,7 +11,7 @@
    
    
     &_img {  // image de la bannière
-      @include WH-full;
+      @include full-width;
       object-fit: cover;
       box-sizing: border-box;
       border-radius: $border-large;
@@ -40,7 +40,7 @@
 
     
     &_dark { // Sombre de la bannière
-      @include WH-full; 
+      @include full-width;
       position: absolute;
       transform: translate(0%, -102%);
       background-color: rgba(0, 0, 0, 0.3);
