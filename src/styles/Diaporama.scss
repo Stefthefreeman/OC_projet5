@@ -38,13 +38,13 @@
     }
 
     &-counter {
-      display: none;
+      font-size: $font-size-5;
    }
   }
 }
 
 
-// Utilisation de Placeholder Selector pour les boutons de diaporama
+
 %diaporama-button {
   position: absolute;
   top: 50%;
@@ -54,7 +54,7 @@
   cursor: pointer;
   padding: 10px;
 
-  .arrow { // flèches de diaporama
+  .arrow {
     color: $text-white;
     width: 36.68px;
     height: 50.2px;

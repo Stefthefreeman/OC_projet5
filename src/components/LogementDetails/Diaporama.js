@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";                       
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; //icone de FontAwesome pour les chevrons
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 
@@ -11,12 +11,10 @@ function Diaporama({ pictures }) {
 
     //F. slid suivant
     const nextSlide = () => {
-        // si c'la dernière image on retourne à la 1ère sinon +1 à l'index
         currentIndex === totalImg  - 1 ? setCurrentIndex(0) : setCurrentIndex(currentIndex + 1)
     }
-    //F.slid précédent
-    const prevSlide = () => { 
-        // si c'est la 1ère image on retourne à la 1ère sinon -1 à l'index
+
+    const prevSlide = () => {// si c'est la 1ère image on retourne à la 1ère sinon -1 à l'index
         currentIndex === 0 ? setCurrentIndex(totalImg  - 1) : setCurrentIndex(currentIndex - 1)
     }
 
@@ -24,19 +22,16 @@ function Diaporama({ pictures }) {
 
     return (
         <div className="diaporama">
-            {/* Image actuelle */}
             <img className="diaporama-img" src={pictures[currentIndex]} alt={pictures[currentIndex]} />
 
-
-            {/* Affichage flèches de navigation s'il y a plus d'une image */}
             {totalImg  > 1 && (
                 <div>
-                    {/* click slid précédent */}
+
                     <div onClick={prevSlide} className="diaporama-button diaporama-button-left">
                         <FontAwesomeIcon icon={faChevronLeft} className="arrow" alt =" flèche précedente" />
                     </div>
 
-                    {/* clickpour slid suivant */}
+
                     <div onClick={nextSlide} className="diaporama-button diaporama-button-right">
                         <FontAwesomeIcon icon={faChevronRight} className="arrow" alt = "flèche suivante"/>
                     </div>
@@ -44,7 +39,6 @@ function Diaporama({ pictures }) {
             )}
 
 
-            {/* Affichage du compteur s'il y a plus d'une image */}
             <div className="diaporama-counter">
             {totalImg  > 1 && `${currentIndex + 1} / ${totalImg }`}
 

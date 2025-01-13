@@ -2,17 +2,17 @@
 @import "./settings";
 
 // components
-@import "./Banner/Banner";
-@import './Card/Card-home';
-@import "Accordion/Accordion";
-@import "Error404/Error404";
-@import "./Layout/Footer";
-@import "./HomeList/Homelist";
-@import "./Layout/Header";
+@import "Banner";
+@import 'Card-home';
+@import "Accordion";
+@import "Error404";
+@import "Footer";
+@import "Homelist";
+@import "Header";
 
 // components logementDetails
-@import "./LogementDetails/Diaporama";
-@import "./LogementDetails/HostPerson";
-@import "./LogementDetails/Rating";
-@import "./LogementDetails/Tags";
-@import "./LogementDetails/LogementsDetails";
+@import "Diaporama";
+@import "HostPerson";
+@import "Rating";
+@import "Tags";
+@import "LogementsDetails";

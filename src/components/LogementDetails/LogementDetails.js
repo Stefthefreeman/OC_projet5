@@ -21,7 +21,6 @@ function LogementDetails({id}) {
         <div>
                 <Fragment>
                     <Diaporama pictures={logement.pictures} />
-                    {/**Détails**/}
                     <div className="logement-details">
                         <div className="logement-details-location">
                             <h2 className="title-logement">{logement.title}</h2>
