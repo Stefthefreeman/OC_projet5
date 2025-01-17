@@ -2,19 +2,19 @@ import React from "react";
 import Banner from "../components/Banner";
 import Accordion from "../components/Accordion";
 import banner_about from "../assets/banner/banner_about_us.png";
-import CollapseData from "../datas/about-us.json";
+import aboutUs from "../datas/about-us.json";
 
 function AboutUs() {
     return (
         <div>
 
             <Banner image={banner_about}/>
-            <main className="about-main" >
+            <main className="accordion-main" >
 
-            {CollapseData.map((collapse) => (
-                <Accordion key={collapse.id}
-                           title={collapse.title}
-                           content={collapse.content} />
+            {aboutUs.map((accordion) => (
+                <Accordion key={accordion.id}
+                           title={accordion.title}
+                           content={accordion.content} />
             ))}
             </main>
 
