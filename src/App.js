@@ -1,4 +1,4 @@
-import {Routes, Route, HashRouter, Navigate} from "react-router-dom";
+import {Routes, Route, Navigate, BrowserRouter} from "react-router-dom";
 import "./styles/App.scss";
 import Home from "./pages/Home";
 import AboutUs from "./pages/aboutUs";
@@ -8,7 +8,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 function App() {
   return (
-      <HashRouter>
+      <BrowserRouter>
           <Header />
           <Routes>
               <Route path="/" element={<Navigate replace to="/accueil" />} />
@@ -18,7 +18,7 @@ function App() {
               <Route path="*" element={<Error404 />} />
           </Routes>
           <Footer />
-      </HashRouter>
+      </BrowserRouter>
 
   );
 }

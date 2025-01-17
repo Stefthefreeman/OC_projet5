@@ -19,6 +19,7 @@ function LogementDetails({id}) {
     //Affichage des logements
     return (
         <>
+
             <Diaporama pictures={logement.pictures} />
                     <div className="logement-details">
                         <div className="logement-details-location">
