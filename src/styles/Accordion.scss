@@ -18,7 +18,7 @@
         size: $font-size-2;
       }
   
-      p { // Titre
+      p {
         padding-left: 15px;
         font: {
           family: $font-family-primary;
@@ -29,12 +29,12 @@
     }
   
 
-    &-icon { // Flèche de collapse
+    &-icon {
       padding-right: 15px;
     }
   
 
-    &-content { // Contenu de la collapse
+    &-content {
       display: flex;
       align-items: $align-center;
       padding-left: 15px;

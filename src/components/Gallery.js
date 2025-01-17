@@ -1,6 +1,6 @@
 import React from 'react';
 import Logements from '../datas/logements.json';
-import CardHome from './Card-Home';
+import CardHome from './CardHome';
 
 function Gallery() {
     return (

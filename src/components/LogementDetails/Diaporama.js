@@ -18,27 +18,19 @@ function Diaporama({ pictures }) {
         currentIndex === 0 ? setCurrentIndex(totalImg  - 1) : setCurrentIndex(currentIndex - 1)
     }
 
-
-
     return (
         <div className="diaporama">
             <img className="diaporama-img" src={pictures[currentIndex]} alt={pictures[currentIndex]} />
-
             {totalImg  > 1 && (
                 <div>
-
                     <div onClick={prevSlide} className="diaporama-button diaporama-button-left">
                         <FontAwesomeIcon icon={faChevronLeft} className="arrow" alt =" flèche précedente" />
                     </div>
-
-
                     <div onClick={nextSlide} className="diaporama-button diaporama-button-right">
                         <FontAwesomeIcon icon={faChevronRight} className="arrow" alt = "flèche suivante"/>
                     </div>
                 </div>
             )}
-
-
             <div className="diaporama-counter">
             {totalImg  > 1 && `${currentIndex + 1} / ${totalImg }`}
 

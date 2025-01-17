@@ -18,9 +18,8 @@ function LogementDetails({id}) {
     }
     //Affichage des logements
     return (
-        <div>
-                <Fragment>
-                    <Diaporama pictures={logement.pictures} />
+        <>
+            <Diaporama pictures={logement.pictures} />
                     <div className="logement-details">
                         <div className="logement-details-location">
                             <h2 className="title-logement">{logement.title}</h2>
@@ -50,15 +49,9 @@ function LogementDetails({id}) {
                         />
                         </div>
                     </div>
-                </Fragment>
-        </div>    
+        </>
     );
 }
 
 export default LogementDetails;
 
-
-//Ce composant affiche les détails d'un logement en vérifiant qu'il existe par l'ID
-//Si logement n'existe pas on redirige vers page d'erreur
-//Si logement existe on affiche les sous-composants 
-//Pour présenter les info du logement, on utilise les données du fichier JSON
