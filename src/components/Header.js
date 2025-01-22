@@ -16,6 +16,7 @@ const Header = () => {
                     className={({ isActive }) => 
                         isActive ? "nav_about active" : "nav_about"}>A propos
                 </NavLink>
+
             </nav>
         </header>
     );

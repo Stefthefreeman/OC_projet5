@@ -11,8 +11,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-
-
-// Composant réutilisable pour dans toutes les pages
-// Il importe et affiche un logo et inclut un texte de copyright
