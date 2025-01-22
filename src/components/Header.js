@@ -6,7 +6,7 @@ const Header = () => {
 
     return (
         <header className="header">
-            <img className="logo_header" src= {logo} alt="logo de Kasa" />
+            <a href="/accueil">"<img className="logo_header" src= {logo} alt="logo de Kasa" /></a>
             <nav className="nav-bar">
                 <NavLink to="/" className={({ isActive }) => 
                          (isActive || location.pathname === "/accueil") ? "nav_home active" : "nav_home" }>Accueil
