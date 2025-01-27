@@ -30,7 +30,7 @@
   
 
     &-icon {
-      padding-right: 15px;
+     // padding-right: 15px;
     }
   
 
@@ -43,6 +43,9 @@
         family: $font-family-primary;
         weight: $font-weight-tertiary;
         size: $font-size-3;
+      }
+      margin:{
+        top:15px;
       }
     }
 
